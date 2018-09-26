@@ -1,0 +1,20 @@
+<form method="post" action="/students"> <!--when we hit submit, it will send a post request to this route, ensure the action matches that on controller-->
+  <label for="first-name">First Name:</label>
+  <input id ="first-name" type="text" name="first_name"/>
+  <!-- name: these should match the fields on the hash -->
+  <!-- for and id should be the same -->
+
+  <label for="second-name">second Name:</label>
+  <input id ="second-name" type="text" name="second_name"/>
+
+  <label for="house-select">Select a House</label>
+  <select id="house-select" name="name"> <!--select is a drop down-->
+    <option value="Gryffindor">Gryffindor</option> <!-- options are the choices on the dropdown-->
+    <option value="Ravenclaw">Ravenclaw</option>
+    <option value="Hufflepuff">Hufflepuff</option>
+    <option value="Slytherin">Slytherin</option>
+  </select>
+  <label for="agen">Age:</label>
+  <input id="age" type="number" name="age" min="15" max="100"/>
+  <input type="submit" value="Enroll Student"/>
+</form>
